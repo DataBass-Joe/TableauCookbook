@@ -60,12 +60,12 @@ new_tableau_document = new_tab_file.tableau_document
 def_datasources = new_tableau_document.datasources
 def_datasource = def_datasources[0]
 def_datasource.add_new_connection(ds_type=u'oracle',
-                                  server=u'prod01-scan.sys.utah.edu',
-                                  db_or_schema_name="STUDENT_DM")
+                                  server=u'xxxxxxxxxxx.utah.edu',
+                                  db_or_schema_name="XXXXXX")
 
 new_data_source = def_datasource.connections[0]
-new_data_source.port = "1521"
-new_data_source.service = "biprusr"
+new_data_source.port = "xxxxxx"
+new_data_source.service = "xxxxxxx"
 
 
 new_tableau_document.xml.attrib['name'] = "DEFINITIONS"
